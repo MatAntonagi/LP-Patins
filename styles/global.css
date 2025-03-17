@@ -41,3 +41,7 @@ h1{
 h2{
     font: 700 var(--text-lg)/1.2;
 }
+
+a{
+    color: inherit;
+}
