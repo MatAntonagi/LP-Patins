@@ -21,7 +21,7 @@
 
     --text-sm: 0.875rem;
     --text-base: 1rem;
-    --text-lg: 2rem;
+    --text-lg: 2.5rem;
     --text-xl: 4rem;
     
 }
@@ -35,11 +35,13 @@ h1, h2{
 }
 
 h1{
-    font: 700 var(--text-xl)/1.25;
+    font-size: var(--text-xl);
+    list-style: 1.25;
 }
 
 h2{
-    font: 700 var(--text-lg)/1.2;
+    font-size: var(--text-lg);
+    line-height: 1.2;
 }
 
 a{
