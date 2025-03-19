@@ -1,0 +1,27 @@
+.banner{
+    width: 100%;
+    padding-block: 2.5rem;
+    overflow: hidden;
+
+    .scroller{
+        width: 100%;
+        overflow: hidden;
+        padding-block: 1.25rem;
+        background: linear-gradient(90deg , var(--snitap-joy-light)30%, var(--snitap-sky-light)100%);
+    }
+
+    .rolling{
+        width: 100%;
+        
+        display: flex;
+        gap: 1.5rem;
+
+        animation: banner-roller 2s linear infinite;
+    }
+}
+
+@keyframes banner-roller {
+    100%{
+        transform: translateX(-132px);
+    }
+}
