@@ -48,3 +48,12 @@ h2{
 a{
     color: inherit;
 }
+
+@media (width <= 377px){
+    :root{
+        --text-sm: 0.75rem;
+        --text-base: 1rem;
+        --text-lg: 1.5rem;
+        --text-xl: 2rem;
+    }
+}

@@ -12,7 +12,7 @@
         gap: .5rem;
 
         & span{
-            font: 500 .875rem/1.5 var(--ff-base);
+            font: 500 var(--text-sm)/1.5 var(--ff-base);
         }
     }
 
@@ -35,9 +35,9 @@
             animation-timeline: view();
             animation-range: 100px 300px;
 
-            &[data-delay] {
-                animation-range: 150px 350px;
-            }
+                &[data-delay] {
+                    animation-range: 150px 350px;
+                }
 
             & > img{
                 height: 25rem;
@@ -112,5 +112,34 @@
     from{
         opacity: 0;
         transform: translateY(100%);
+    }
+}
+
+@media (width <= 377px){
+    .gallery{
+        padding: 1.5rem;
+
+        & .content{
+            margin-top: 1.5rem;
+            grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D";
+            gap: 1.5rem;
+            
+
+            & figure{
+                animation-range: 10px 300px;
+
+                &[data-delay] {
+                    animation-range: 0 300px;
+                }
+
+                & > img{
+                    height: 16rem;
+                }
+            }
+        }
     }
 }
