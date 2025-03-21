@@ -49,7 +49,7 @@ a{
     color: inherit;
 }
 
-@media (width <= 377px){
+@media (width >= 375px){
     :root{
         --text-sm: 0.75rem;
         --text-base: 1rem;

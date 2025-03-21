@@ -220,7 +220,7 @@ section.hero{
     }
 }
 
-@media (width <= 377px){
+@media (width >= 375px){
     section.hero{
         flex-direction: column-reverse;
         max-width: 375px;
